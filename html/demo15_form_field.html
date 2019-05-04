@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<!-- 三个域
+	1. 文本域 textarea  留言的
+	2. 文件域 input type = "file"
+	3. 表单域 form 收集表单控件信息 并且提交的 -->
+	<h2>表单域</h2>
+	<form action="demo.php" method="post" name="login">
+		<p>用户名： <input type="text" name="username"> </p>
+		<p>密　码： <input type="password" name="pwd"> </p>
+		<input type="submit" value="提交">
+		<input type="reset" value="重置">
+	</form>
+	<form action="demo.php" method="post" name="register">
+		<p>用户名： <input type="text" name="username"> </p>
+		<p>密　码： <input type="password" name="pwd"> </p>
+		<input type="submit" value="提交">
+		<input type="reset" value="重置">
+	</form>
+
+	<ol>
+		<li>get 速度快 但是会显示表单里面的内容 不安全 不能做密码提交的</li>
+		<li>post 速度慢一些 不会显示表单内容 安全一些</li>
+	</ol>
+
+</body>
+</html>
